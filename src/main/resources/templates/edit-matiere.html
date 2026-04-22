@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Ajouter Matiere</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="header">GESTION DES NOTES</div>
+
+<div class="container">
+
+<h2>Ajouter / Modifier Matiere</h2>
+
+<form th:action="@{/matieres/save}" th:object="${matiere}" method="post">
+
+<input type="hidden" th:field="*{id}">
+
+<label>Nom Matiere</label><br>
+<input type="text" th:field="*{nom}" required><br><br>
+
+<label>Intitulé</label><br>
+<input type="text" th:field="*{intitule}" required><br><br>
+
+<button type="submit" class="btn">Enregistrer</button>
+
+<a href="/matieres" class="btn btn-retour">Retour</a>
+
+</form>
+
+</div>
+
+</body>
+</html>

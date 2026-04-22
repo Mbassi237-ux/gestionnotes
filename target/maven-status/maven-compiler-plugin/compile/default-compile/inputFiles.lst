@@ -1,0 +1,15 @@
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/service/MatiereService.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/entity/Etudiant.java
+/home/alexandre/gestionnotes/src/main/java/com/example/App.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/repository/MatiereRepository.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/repository/EtudiantRepository.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/controller/PVController.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/controller/MatiereController.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/repository/NoteRepository.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/entity/Matiere.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/controller/EtudiantController.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/controller/NoteController.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/service/EtudiantService.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/GestionNotesApplication.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/service/NoteService.java
+/home/alexandre/gestionnotes/src/main/java/com/example/gestionnotes/entity/Note.java

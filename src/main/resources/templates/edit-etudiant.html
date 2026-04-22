@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>Ajouter Etudiant</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="header">GESTION DES NOTES</div>
+
+<div class="container">
+
+<h2>Ajouter / Modifier Etudiant</h2>
+
+<form th:action="@{/etudiants/save}" th:object="${etudiant}" method="post">
+
+<input type="hidden" th:field="*{id}">
+
+<label>Matricule</label><br>
+<input type="text" th:field="*{matricule}" required><br><br>
+
+<label>Nom</label><br>
+<input type="text" th:field="*{nom}" required><br><br>
+
+<label>Prenom</label><br>
+<input type="text" th:field="*{prenom}" required><br><br>
+
+<button type="submit" class="btn">Enregistrer</button>
+
+<a href="/etudiants" class="btn btn-retour">Retour</a>
+
+</form>
+
+</div>
+
+</body>
+</html>

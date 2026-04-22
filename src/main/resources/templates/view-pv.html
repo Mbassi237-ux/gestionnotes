@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8">
+<title>PV - Gestion des notes</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+<div class="header">
+GESTION DES NOTES
+</div>
+
+<div class="container">
+
+<a href="/" class="btn btn-retour">Retour Accueil</a>
+
+<h2>
+Procès-verbal pour la matière : 
+<span th:text="${matiere.nom}"></span>
+</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Matricule</th>
+<th>Étudiant</th>
+<th>CC /20</th>
+<th>SN /40</th>
+<th>TP /40</th>
+<th>Total /100</th>
+<th>Appréciation</th>
+</tr>
+
+<!-- Utilisation de iterStat pour l'ID virtuel -->
+<tr th:each="note, iterStat : ${notes}">
+    <td th:text="${iterStat.index + 1}"></td>
+    <td th:text="${note.etudiant.matricule}"></td>
+    <td th:text="${note.etudiant.nom + ' ' + note.etudiant.prenom}"></td>
+    <td th:text="${note.cc}"></td>
+    <td th:text="${note.sn}"></td>
+    <td th:text="${note.tp}"></td>
+    <td th:text="${note.total}"></td>
+    <td th:text="${note.appreciation}"></td>
+</tr>
+
+</table>
+
+<br>
+
+<a href="/pv" class="btn">Retour</a>
+
+</div>
+
+</body>
+</html>
